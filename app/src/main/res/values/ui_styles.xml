@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="ui_theme" parent="android:Theme.Holo.Light.NoActionBar">
+    </style>
+
+    <style name="ui_titleFontStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/ui_titleFontSize</item>
+        <item name="android:textColor">@color/ui_titleFontColor</item>
+    </style>
+
+</resources>

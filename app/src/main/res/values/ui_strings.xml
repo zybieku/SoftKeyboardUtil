@@ -1,0 +1,6 @@
+<resources>
+
+    <string name="ui_hostLoginTitle">手机号码登录</string>
+    <string name="ui_independentLoginTitle">用户名登录</string>
+
+</resources>

@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EEEEEE">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/ui_titleBackground">
+
+        <TextView
+            style="@style/ui_titleFontStyle"
+            android:text="@string/ui_hostLoginTitle"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/head"
+        android:background="@color/ui_shadowgray"/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/ui_activity_horizontal_margin"
+        android:paddingRight="@dimen/ui_activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/et_city_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ui_edittext_height"
+            android:background="@drawable/ui_rounded_rectangle_normal"
+            android:paddingLeft="@dimen/ui_edittext_leftpadding"
+            android:paddingRight="@dimen/ui_edittext_rightpadding"
+            android:layout_marginBottom="@dimen/ui_edittext_margin"
+            android:text="中国大陆 +86"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ui_edittext_height"
+                android:layout_weight="2"
+                android:paddingLeft="@dimen/ui_edittext_leftpadding"
+                android:paddingRight="@dimen/ui_edittext_rightpadding"
+                android:layout_marginRight="@dimen/ui_edittext_margin"
+                android:layout_marginBottom="@dimen/ui_edittext_margin"
+                android:inputType="number"
+                android:singleLine="true"
+                android:background="@drawable/ui_rounded_rectangle_normal"
+                android:hint="请输入手机号"/>
+
+            <Button
+                android:id="@+id/btn_code"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/ui_edittext_height"
+                android:layout_weight="1"
+                android:background="@drawable/ui_rounded_rectangle_normal"
+                android:textSize="@dimen/ui_buttonFontSize"
+                android:textColor="@color/ui_defaultButtonColor"
+                android:text="获取验证码"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_check_code"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ui_edittext_height"
+            android:paddingLeft="@dimen/ui_edittext_leftpadding"
+            android:layout_marginBottom="@dimen/ui_edittext_margin"
+            android:background="@drawable/ui_rounded_rectangle_normal"
+            android:inputType="number"
+            android:singleLine="true"
+            android:hint="短信验证码"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/ui_edittext_height"
+            android:windowSoftInputMode="adjustResize"
+            android:background="@drawable/ui_btn_blue_bg"
+            android:layout_marginTop="@dimen/ui_edittext_margin"
+            android:layout_marginBottom="20dp"
+            android:textSize="@dimen/ui_buttonFontSize"
+            android:textColor="@color/ui_white"
+            android:text="登录"/>
+
+        <FrameLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:textColor="@color/ui_defaultButtonColor"
+                android:text="@string/ui_independentLoginTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:textColor="@color/ui_defaultButtonColor"
+                android:text="注册新用户"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
