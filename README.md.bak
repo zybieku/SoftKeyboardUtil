@@ -10,7 +10,7 @@
 
  >从而达到相应效果,但是在页面复杂的时候,要实现的onclick方法会很多,甚至还会有逻辑处理冲突的情况.这样做就显得非常不友好. 
 
-----------
+
 ----------
 
 > **原理 :**  就是重写Activity的dispatchTouchEvent(MotionEvent ev)方法,全局监听触摸事件, 当点击的页面时,发现如果焦点在EditView上,就把软键盘隐藏,否则就不做处理.
@@ -36,6 +36,7 @@
 
 ![图片](https://github.com/zybieku/SoftKeyboardUtil/blob/master/gif/GIF.gif)
 
+----------
 喜欢的朋友记得点个Star
 具体详情请看文件
 [博客地址](http://blog.csdn.net/zybieku/article/details/68925116)
