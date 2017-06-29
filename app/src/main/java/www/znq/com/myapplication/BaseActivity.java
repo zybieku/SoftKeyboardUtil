@@ -1,11 +1,12 @@
-package www.gyx.com.myapplication;
+package www.znq.com.myapplication;
 
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 
-import www.gyx.com.myapplication.util.KeyBoardUtils;
+import www.znq.com.myapplication.util.KeyBoardUtils;
+
 
 /**
  * desc:
@@ -70,6 +71,23 @@ public class BaseActivity extends AppCompatActivity {
         }
         return false;
     }
+
+    //是否触摸在指定view上面,对某个控件过滤
+    public boolean isTouchView(int[] ids, MotionEvent ev) {
+        int[] location = new int[2];
+        for (int id : ids) {
+            View view = findViewById(id);
+            if (view == null) continue;
+            view.getLocationOnScreen(location);
+            int x = location[0];
+            int y = location[1];
+            if (ev.getX() > x && ev.getX() < (x + view.getWidth())
+                    && ev.getY() > y && ev.getY() < (y + view.getHeight())) {
+                return true;
+            }
+        }
+        return false;
+    }
     //endregion
 
     //region 右滑返回上级
@@ -83,9 +101,12 @@ public class BaseActivity extends AppCompatActivity {
                 return super.dispatchTouchEvent(ev);
             View v = getCurrentFocus();
             if (isFocusEditText(v, hideSoftByEditViewIds())) {
+                if (isTouchView(hideSoftByEditViewIds(), ev))
+                    return super.dispatchTouchEvent(ev);
                 //隐藏键盘
                 KeyBoardUtils.hideInputForce(this);
                 clearViewFocus(v, hideSoftByEditViewIds());
+
             }
         }
         return super.dispatchTouchEvent(ev);

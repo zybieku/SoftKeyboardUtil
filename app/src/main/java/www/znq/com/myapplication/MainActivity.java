@@ -1,4 +1,4 @@
-package www.gyx.com.myapplication;
+package www.znq.com.myapplication;
 
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +19,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     public View[] filterViewByIds() {
-        View[] views = {mPhone, mBtnCode};
+        View[] views = {mBtnCode};
         return views;
     }
 

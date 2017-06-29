@@ -1,4 +1,4 @@
-package www.gyx.com.myapplication.util;
+package www.znq.com.myapplication.util;
 
 /**
  * Created by moses on 2016/11/10.
