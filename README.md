@@ -25,10 +25,13 @@
 
 
 > 如果要对某些控件进行过滤
+
+
       @Override
     public View[] filterViewByIds() {
            return 传入要过滤的View[]
     }
+
 
 ----------
 >**修复bug:** 
