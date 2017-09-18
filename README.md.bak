@@ -41,8 +41,5 @@
 具体详情请看主页
 [博客地址](http://blog.csdn.net/zybieku/article/details/68925116)
 
-----------
 
-LICENSE
 
-[Apache License 2.0](https://github.com/zybieku/SoftKeyboardUtil/blob/master/LICENSE.txt)
