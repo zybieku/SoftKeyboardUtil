@@ -1,7 +1,7 @@
 package www.znq.com.myapplication.util;
 
 /**
- * Created by moses on 2016/11/10.
+ * Created by znq on 2016/11/10.
  */
 
 import android.app.Activity;

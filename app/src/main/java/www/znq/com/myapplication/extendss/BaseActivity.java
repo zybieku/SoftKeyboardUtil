@@ -1,4 +1,4 @@
-package www.znq.com.myapplication;
+package www.znq.com.myapplication.extendss;
 
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -9,7 +9,7 @@ import www.znq.com.myapplication.util.KeyBoardUtils;
 
 
 /**
- * desc:
+ * desc:通过baseActivity继承
  * Author:znq
  * Date: 2017/5/19.
  */

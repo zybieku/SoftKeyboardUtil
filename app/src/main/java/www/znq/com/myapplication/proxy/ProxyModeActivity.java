@@ -1,18 +1,14 @@
-package www.znq.com.myapplication;
+package www.znq.com.myapplication.proxy;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.EditText;
 
-import www.znq.com.myapplication.proxy.ActivityKeyBoardProxy;
-import www.znq.com.myapplication.proxy.ActivityKeyBoardProxyBuild;
-import www.znq.com.myapplication.util.KeyBoardUtils;
+import www.znq.com.myapplication.R;
 
 /**
  * 非侵入式控制

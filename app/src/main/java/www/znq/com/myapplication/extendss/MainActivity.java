@@ -1,9 +1,15 @@
-package www.znq.com.myapplication;
+package www.znq.com.myapplication.extendss;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import www.znq.com.myapplication.R;
+
+/**
+ * 方式一
+ * 继承BaseActivity
+ */
 public class MainActivity extends BaseActivity {
 
     private EditText mPhone;
@@ -15,12 +21,7 @@ public class MainActivity extends BaseActivity {
         setContentView(R.layout.ui_activity_host_login);
         mPhone = (EditText) findViewById(R.id.et_phone);
         mBtnCode = findViewById(R.id.btn_code);
-        findViewById(R.id.confirm_btn).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ProxyModeActivity.start(MainActivity.this);
-            }
-        });
+
     }
 
     @Override
