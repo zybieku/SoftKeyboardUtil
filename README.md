@@ -60,7 +60,8 @@
 ![图片](https://github.com/zybieku/SoftKeyboardUtil/blob/master/gif/GIF.gif)
 
 ----------
-由于半年多没写Android,很多代码陌生了,欢迎各位大佬提pull request
+> 由于半年多没写Android,很多代码陌生了,欢迎各位大佬提pull request
+
 喜欢的朋友记得点个Star
 具体详情请看主页
 [博客地址](http://blog.csdn.net/zybieku/article/details/68925116)
