@@ -12,7 +12,7 @@
 
 
 ----------
-####方式一 继承方式
+#### 方式一 继承方式
 
 > **原理 :** 怎样封装成一行代码实现,就是重写Activity的dispatchTouchEvent(MotionEvent ev)方法,全局监听触摸事件, 当点击的页面时,发现如果焦点在EditView上,就把软键盘隐藏,否则就不做处理.
 
@@ -30,7 +30,7 @@
            return 传入要过滤的View[]
     }
    ```
-####方式二  proxy链式调用(由jiiiiiin提供)
+#### 方式二  proxy链式调用(由jiiiiiin提供)
 
 ```
       try {
