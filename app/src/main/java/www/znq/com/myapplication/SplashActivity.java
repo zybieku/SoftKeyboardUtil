@@ -7,6 +7,7 @@ import android.view.View;
 
 import www.znq.com.myapplication.extendss.MainActivity;
 import www.znq.com.myapplication.proxy.ProxyModeActivity;
+import www.znq.com.myapplication.proxy.ProxyModeFragmentActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -24,5 +25,9 @@ public class SplashActivity extends AppCompatActivity {
     //proxy方式
     public void clickProxy(View view){
         startActivity(new Intent(this, ProxyModeActivity.class));
+    }
+
+    public void clickProxyFragment(View view){
+        startActivity(new Intent(this, ProxyModeFragmentActivity.class));
     }
 }

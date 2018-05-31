@@ -2,6 +2,7 @@ package www.znq.com.myapplication.proxy;
 
 import android.app.Activity;
 import android.support.annotation.NonNull;
+import android.support.v4.app.Fragment;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
@@ -10,8 +11,8 @@ import www.znq.com.myapplication.util.ActivityUtil;
 import www.znq.com.myapplication.util.KeyBoardUtils;
 
 /**
+ * @author jiiiiiin
  * @version 1.0
- * @auther Created by jiiiiiin on 2018/5/18.
  */
 public class ActivityKeyBoardProxyBuild {
 

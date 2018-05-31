@@ -47,7 +47,6 @@ public class ProxyModeActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     public boolean dispatchTouchEvent(final MotionEvent ev) {
         if (mActivityKeyBoardProxy != null) {
