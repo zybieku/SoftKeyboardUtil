@@ -16,6 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".proxy.ProxyModeActivity"/>
+        <activity android:name=".proxy.ProxyModeFragmentActivity"/>
         <activity android:name=".extendss.MainActivity">
         </activity>
     </application>
