@@ -30,7 +30,7 @@ public class ProxyModeActivity extends AppCompatActivity {
         setContentView(R.layout.ui_activity_host_login);
         mBtnCode = findViewById(R.id.btn_code);
         try {
-            mActivityKeyBoardProxy = ActivityKeyBoardProxyBuild.getInstance()
+            mActivityKeyBoardProxy = new ActivityKeyBoardProxyBuild()
                     .withActivity(this)
                     .withHideSoftByEditViewIds(new int[]{R.id.et_phone, R.id.et_check_code, R.id.et_city_code})
                     .withFilterViewByIds(new View[]{mBtnCode})

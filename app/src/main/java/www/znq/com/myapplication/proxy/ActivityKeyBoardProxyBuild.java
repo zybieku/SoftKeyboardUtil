@@ -22,17 +22,6 @@ public class ActivityKeyBoardProxyBuild {
     private ActivityKeyBoardProxy mActivityKeyBoardProxy = null;
     private ActivityKeyBoardProxy.OnHideInputForceListener mOnHideInputForceListener = null;
 
-    private ActivityKeyBoardProxyBuild() {
-    }
-
-    private static class Holder {
-        private static final ActivityKeyBoardProxyBuild INSTANCE = new ActivityKeyBoardProxyBuild();
-    }
-
-    public static ActivityKeyBoardProxyBuild getInstance() {
-        return Holder.INSTANCE;
-    }
-
     public ActivityKeyBoardProxyBuild withActivity(@NonNull Activity activity) {
         this.mActivity = activity;
         return this;
